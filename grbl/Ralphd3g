@@ -1,0 +1,29 @@
+Hello
+I'm having trouble with my Arduino Uno, CNC Shield R3, 1/32 Step Jumpers.
+Adventure continues.
+Computer Leenovo Ideapad 320 AMD A12 7th Gen Processor
+Windows 10 
+Xloader V1.00 Loading GRBL_V1.1f.20170801
+Using GRBLGRU V3.29.0 and Universal Gcode Sender V2.0 [nightly] Jul 21,2018
+ Unit 1 Uno Xtal by USB, 32 pin CPU Square Package, No maker or Serial Opened unknown 2018, 
+ Unit 2 Uno Xtal by ISCP, 32 pin CPU Square Package, No maker or Serial Opened 09/15/2018 
+ Unit 3 Uno Xtal by ISCP, 32 pin CPU Square Package, No maker or Serial Opened 09/13/2018 
+ Unit 4 Uno Xtal by USB, large UNO silk screan. Opened 09/13/2018
+CNC Shield 1 = Ver 3.00 Info Protoneer.com/1 no serial number
+CNC Shield 2 = Ver 3.00 Info Protoneer.com/1 no serial number
+CNC Shield 3 = Ver 3.00 Info Protoneer.com/1 no serial number
+CNC Shield 4 = Ver 3.00 Info Protoneer.com/1 no serial number
+Been working on this CNC for two years now New PC,Windows 10 and thought I was getting some where at this point when I changed out my Motors. Running 1 motor X, 2 motors Y, 1 motor Z. Reset my GRBL setting and reduced my current on DVR8825 and had this system running better then ever. It even returned to Zero point on it's own!  Without missed steps or fumbles. WOW!
+	So next step lets get some more accuracy out of it and install jumpers m0, m1, m2, on  CNC Shield R3 for 1/32 steps. 
+	Calibration in GRBL OK XYZ. Then to shoot it some G-code and see what happens. 
+>>>>>	Well to my Surprise the system was sent G-code and the Z-axes started up and went to Safe Z and STOPED. At that point Got Error 9 and that was in the code window as code went by. Now I get it even in jogging. One of my Arduino Uno's lost it's program and had to reload the Hex File. In fact thats whats going on now Verified GRBL is there then as soon as I send Jog to the machine the GRBL Program Disapers.  No more communication. All four UNO's looses program is soon as I jog or send them Gcode. 
+	Happens on both ports (com3, com4) program is lost weather the driver power is on or off. same idenital probrem on four seperate arduino uno and cnc shield r3 pairs. (unit 1, unit 2, unit 3, unit 4)  only thing changed was the drivers drv8825 because I only have 4 that work. drivers were hot when I took them out.
+HELP!
+
+RALPH
+I did a bunch of testing but the bottom line. Is this Good or Bad.
+TESTING UNO'S 09/20/2018 13:00
+unit 1 uploades grbl_v1.1f.20170801 But without shield looses program when jog
+unit 2 uploades grbl_v1.1f.20170801 But without shield looses program when jog
+unit 3 uploades grbl_v1.1f.20170801 But without shield looses program when jog
+unit 4 uploades grbl_v1.1f.20170801 but without shield looses program when jog
